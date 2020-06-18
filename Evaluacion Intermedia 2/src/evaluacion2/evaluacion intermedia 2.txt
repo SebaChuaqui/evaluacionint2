@@ -1,0 +1,60 @@
+Contextualización del Problema y Planteamiento de la Solución de la Evaluación
+
+Se nos solicita crear un programa llamado "Electrodomestico", como superclase que contenga ciertos atributos, junto con constructores y metodos que
+resuelvan la ejecucion de este programa.
+
+Para esto primero defini 3 clases (1 padre y 2 hijas), ademas de incluir un Principal para la ejecucion de los datos:
+
+Superclase "Electrodomestico" (Clase Padre)
+Clase "Lavadora" (Clase Hija)
+Clase "Television" (Clase Hija)
+Ejecutable "Principal" (Ejecuta el Programa JAVA)
+
+En la Clase Padre realice las siguientes acciones:
+
+1. Defini 4 constantes por defecto: Color, Consumo de Energia, Precio Base y Peso.
+2. Realice los atributos que debe tener la superclase: Precio Base (double), color (String), consumoEnergetico (char) y peso (double), utilice el modificador 
+protected para que las subclases puedan tener acceso al campo o método.
+3. Se nos indico, que por defecto el color debia ser blanco, ademas de existir otros colores disponibles, por lo cual utilice el modificador private con un void 
+para comprobar el tipo de color encontrado.
+4. Lo mismo realice con el atributo Consumo Energetico para identificar que tipo de consumo tienen los Electrodomesticos.
+5. Defini luego a traves del metodo get el retorno de los atributos antes señalados.
+6. Para el precio final, cree un valor que es igual a 0, para que luego en el programa principal hiciera los calculos correspondientes. Ademas coloque un switch 
+que indicara a traves de case, el listado de precios para cada tipo de Consumo Energetico (Se solicitaba de la A a la F) y con la formula el valor de los precios
+de cada uno agregue los valores segun el peso del tamaño de cada electrodomestico, segun tabla indicada en el ejercicio.
+7. Finalice con los constructores por defecto, un constructor con 2 parametros y otro con 5 parametros, que a traves de la sentencia this, invoca los parametros
+de la clase.
+
+En la clase hija "Lavadora" el desarrollo lo realice de la siguiente manera:
+
+1. Primero declare la herencia que debia tener esta clase con respecto a la superclase electrodomestico.
+2. Ingrese el constructor por defecto y un atributo que los determine como "carga", que a traves de un metodo me regrese el valor de la carga de la Lavadora.
+3. Ahora, defino el get para que retorne los valores e invocamos el metodo PrecioFinal definido en la Clase Padre, añadiendo la solicitud que se hace en el enunciando:
+aumentar en 50 si la carga es mayor a 30, para luego se nos retorne el valor.
+4. Termine con los mismos constructores de la clase padre del final, solamente que al ultimo, le agregue otro parametro que es carga, que esta definido al comienzo 
+de la clase "Lavadora".
+
+En la clase hija "Television" la resolucion al problema fue la siguiente:
+
+1. Se crea la constante "Resolucion" en base a los solicitado en el ejercicio, la cual se deja por defecto
+2. En los atributos se indica con Integro la resolucion y a traves de un booleano indico si la television tiene o no un sintonizadorTDT
+3. Añado los metodos como publicos invocando el PrecioFinal de la clase padre, para luego ingresar el codigo necesario que evalua el tamaño de la resolucion de la
+pantalla.
+4. Finalizo con los constructores correspondientes para que retorne los valores: Constructor por defecto, constructor con 2 parametros (al igual que la clase padre y la otra hija y en el ultimo constructor agrego 6 parametros: los 4 principales de la clase padre y la resolucion y sintonizadorTDT que corresponde a esta clase hija.
+
+Finalmente en la clase principal creo un array de electromediscos de 10 posiciones para luego asignarle valores que seran vistos al ejecutar el programa. Luego, creo 
+la variable de suma para calcular el valor total de cada uno de los: Electrodomesticos, Lavadoras y Televisores, para luego recorrer el array del metodo Precio Final.
+
+Cabe señalar en este punto, que al ser la television y lavadora, tambien electrodomesticos, estos pasaran por su clase y por la clase electrodomesticos influyendo en
+la ejecucion del PrecioFinal. Terminando con la muestra de los resultados obtenidos.
+
+Nota: Producto de que el precio base en el ejercicio se identifica como $100.000, decidi colocar los valores de la tabla adjunta que estaba en euros, en pesos, al 
+ingresar los valores por pantalla para que el ejercicio tuviera la logica correspondiente, es decir, que los precios de aumento de los productos, en vez de ser 50 
+euros son 50 pesos y los datos ingresados para los productos son superiores a $100.000 
+
+
+
+
+
+
+
